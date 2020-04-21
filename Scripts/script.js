@@ -1,15 +1,25 @@
 const myButton = document.getElementById("clickMe");
-    const noun1 = document.getElementById("noun1");
-    const noun1Input = document.getElementById("noun1Input");
-    const noun2 = document.getElementById("noun2");
-    const noun2Input = document.getElementById("noun2Input");
-    const noun3 = document.getElementById("noun3");
-    const noun3Input = document.getElementById("noun3Input");
+    const number1 = document.getElementById("number1");
+    const number1Input = document.getElementById("number1Input");
+    const name1 = document.getElementById("name1");
+    const name1Input = document.getElementById("name1Input");
+    const state = document.getElementById("state");
+    const stateInput = document.getElementById("stateInput");
+    const dayOfWeek = document.getElementById("dayOfWeek");
+    const dayOfWeekInput = document.getElementById("dayOfWeekInput");
+    const month = document.getElementById("month");
+    const monthInput = document.getElementById("monthInput");
+    const animal = document.getElementById("animal");
+    const animalInput = document.getElementById("animalInput");
+    
 
     myButton.addEventListener('click', function (e) {
         e.preventDefault();
         
-        noun1.innerHTML = noun1Input.value;
-        noun2.innerHTML = noun2Input.value;
-        noun3.innerHTML = noun3Input.value;
+        number1.innerHTML = number1Input.value;
+        name1.innerHTML = name1Input.value;
+        state.innerHTML = stateInput.value;
+        dayOfWeek.innerHTML = dayOfWeekInput.value;
+        month.innerHTML = monthInput.value;
+        animal.innerHTML = animalInput.value;
     });
