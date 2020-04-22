@@ -22,11 +22,9 @@
 
 const container = document.getElementById("container");
 container.style.display = "flex";
-container.style.width = "100vw";
+container.style.maxWidth = "100vw";
 container.style.flexDirection = "column";
 container.style.alignItems = "center";
-// container.style.border = "1px solid red";
-container.style.margin = "0 2%";
 
 document.body.style.fontFamily = "sans-serif";
 
@@ -69,7 +67,6 @@ link1.style.fontWeight = "bold";
 link1.style.fontSize = "24px";
 link1.style.textDecoration = "none";
 
-
 // Creates the categories link
 
 const link2 = document.createElement("a");
@@ -80,7 +77,6 @@ link2.style.textDecoration = "none";
 link2.href = "#";
 link2.style.color = "white";
 link2.style.fontWeight = "100";
-
 
 // Wraps contents in a main element
 
@@ -96,6 +92,7 @@ main.appendChild(review);
 review.style.backgroundColor = "rgb(221, 222, 224)";
 review.style.padding = "10px";
 review.style.width = "100%";
+
 // Creates the h1
 
 const reviewHeading = document.createElement('h1');
@@ -113,7 +110,58 @@ reviewParagraph.style.fontWeight = "200";
 
 // Creates a div for posts
 
-const postsSection = document.createElement("div");
+const post1 = document.createElement("div");
+main.appendChild(post1);
+post1.style.width = "100%";
+
+// Creates the h2 in the first post
+
+const post1Heading = document.createElement("h2");
+post1.appendChild(post1Heading);
+post1Heading.textContent = "Hello WatchKit";
+post1Heading.style.color = "rgb(11, 103, 185)";
+post1Heading.style.fontWeight = "300";
+
+// Creates the paragraph in the first post
+
+const post1Content = document.createElement("p");
+post1.appendChild(post1Content); 
+post1Content.textContent = "Last month Apple released the anticipated WatchKit Framework for developers in the form of iOS 8.2 beta SDK release. The WatchKit framework enables the developers to create Apple Watch applications. In this article we are going to focus on the basics of getting started with the WatchKit framework and developing apps for the Apple Watch.";
+post1Content.style.fontWeight = "200";
+post1Content.style.marginBottom = "0";
+
+// Creates orang social bar
+
+const socialBar = document.createElement('div');
+post1.appendChild(socialBar);
+socialBar.width = "100%";
+socialBar.style.backgroundColor = "rgb(240, 144, 45)";
+socialBar.style.color = "rgb(255, 255, 255)";
+socialBar.style.display = "flex";
+socialBar.style.margin = "0";
+
+
+const comment = document.createElement("p");
+socialBar.appendChild(comment);
+comment.textContent = "12 comments";        
+comment.style.fontWeight = "500";
+comment.style.display = "block";
+comment.style.padding = "5px 35px 5px 5px";
+comment.style.margin = "0";
+
+const likes = document.createElement("p");
+socialBar.appendChild(likes);
+likes.textContent = "124 likes";        
+likes.style.fontWeight = "500";
+likes.style.display = "block";
+likes.style.padding = "5px";
+likes.style.margin = "0";
+
+
+
+
+// const post2 = document.createElement("div");
+
 
 
 </script>
