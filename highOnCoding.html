@@ -105,7 +105,7 @@ reviewHeading.style.marginBottom = "40px";
 
 const reviewParagraph = document.createElement("p");
 review.appendChild(reviewParagraph); 
-reviewParagraph.textContent = "When you want to buy any application from the Apple iTunes store you have more.  When you want to buy any application from the Apple iTunes store you have more.  When you want to buy any application from the Apple iTunes store you have more.  When you want to buy any application from the Apple iTunes store you have more. This is the end of the paragraph.";
+reviewParagraph.textContent = "When you want to buy any application from the Apple iTunes store you have more choices than you can handle. Most of the users scroll past the application description completely avoiding it like ads displayed on the right column of your webpage. Their choice is dependent on three important factors price, screenshot and reviews.";
 reviewParagraph.style.fontWeight = "200";
 
 // Creates a div for posts
@@ -130,7 +130,7 @@ post1Content.textContent = "Last month Apple released the anticipated WatchKit F
 post1Content.style.fontWeight = "200";
 post1Content.style.marginBottom = "0";
 
-// Creates orang social bar
+// Creates orange social bar
 
 const socialBar = document.createElement('div');
 post1.appendChild(socialBar);
@@ -157,12 +157,53 @@ likes.style.display = "block";
 likes.style.padding = "5px";
 likes.style.margin = "0";
 
+// Creates the second paragraph
 
+const post2 = document.createElement("div");
+main.appendChild(post2);
+post2.style.width = "100%";
 
+// Creates the h2 in the second post
 
-// const post2 = document.createElement("div");
+const post2Heading = document.createElement("h2");
+post2.appendChild(post2Heading);
+post2Heading.textContent = "Introduction to Swift";
+post2Heading.style.color = "rgb(11, 103, 185)";
+post2Heading.style.fontWeight = "300";
 
+// Creates the paragraph in the second post
 
+const post2Content = document.createElement("p");
+post2.appendChild(post2Content); 
+post2Content.textContent = "Swift is a modern programming language developed by Apple to create the next generation of iOS and OSX applications. Swift is a fairly new language and still in development but it clearly reflects the intentions and the future direction. This article will revolve around the basic concepts in the Swift language and how you can get started.";
+post2Content.style.fontWeight = "200";
+post2Content.style.marginBottom = "0";
+
+// Creates orange social bar
+
+const socialBar2 = document.createElement('div');
+post2.appendChild(socialBar2);
+socialBar2.width = "100%";
+socialBar2.style.backgroundColor = "rgb(240, 144, 45)";
+socialBar2.style.color = "rgb(255, 255, 255)";
+socialBar2.style.display = "flex";
+socialBar2.style.margin = "0";
+
+const comment2 = document.createElement("p");
+socialBar2.appendChild(comment2);
+comment2.textContent = "15 comments";        
+comment2.style.fontWeight = "500";
+comment2.style.display = "block";
+comment2.style.padding = "5px 35px 5px 5px";
+comment2.style.margin = "0";
+
+const likes2 = document.createElement("p");
+socialBar2.appendChild(likes2);
+likes2.textContent = "45 likes";        
+likes2.style.fontWeight = "500";
+likes2.style.display = "block";
+likes2.style.padding = "5px";
+likes2.style.margin = "0";
 
 </script>
 
