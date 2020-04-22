@@ -1,0 +1,121 @@
+<html>
+
+<head></head>
+
+<body>
+
+<div id="container">
+
+</div>
+
+</body>
+
+
+<script>
+    
+// header
+// - h1
+// - nav
+//   - a
+//   - a
+
+
+const container = document.getElementById("container");
+container.style.display = "flex";
+container.style.width = "100vw";
+container.style.flexDirection = "column";
+container.style.alignItems = "center";
+// container.style.border = "1px solid red";
+container.style.margin = "0 2%";
+
+document.body.style.fontFamily = "sans-serif";
+
+// Creates the header
+
+const header = document.createElement("header");
+container.appendChild(header);
+header.style.width = "90%";
+header.style.color = "white";
+header.style.backgroundColor = "#65a6f3";
+header.style.display = "flex";
+header.style.padding = "0 20px";
+
+
+// Creates the h1 within the header
+
+const heading1 = document.createElement("h1");
+header.appendChild(heading1);
+heading1.textContent = "HighOnCoding";
+heading1.style.paddingRight = "40px";
+
+
+// Creates the nav inside the header
+
+const topNav = document.createElement("nav");
+header.appendChild(topNav);
+topNav.style.display = "flex";
+topNav.style.alignItems = "center";
+
+
+// Creates the home link
+
+const link1 = document.createElement("a");
+topNav.appendChild(link1);
+link1.textContent = "Home";
+link1.href = "#";
+link1.style.paddingRight = "40px";
+link1.style.color = "white";
+link1.style.fontWeight = "bold";
+link1.style.fontSize = "24px";
+link1.style.textDecoration = "none";
+
+
+// Creates the categories link
+
+const link2 = document.createElement("a");
+topNav.appendChild(link2);
+link2.textContent = "Categories";
+link2.style.fontSize = "24px";
+link2.style.textDecoration = "none";
+link2.href = "#";
+link2.style.color = "white";
+link2.style.fontWeight = "100";
+
+
+// Wraps contents in a main element
+
+const main = document.createElement("main");
+container.appendChild(main);
+main.style.marginTop = "20px";
+main.style.width = "87%";
+
+// Creates the Reviews div 
+
+const review = document.createElement('div');
+main.appendChild(review);
+review.style.backgroundColor = "rgb(221, 222, 224)";
+review.style.padding = "10px";
+review.style.width = "100%";
+// Creates the h1
+
+const reviewHeading = document.createElement('h1');
+review.appendChild(reviewHeading);
+reviewHeading.textContent = "Curse of the Current Reviews";
+reviewHeading.style.color = "rgb(83, 88, 94)";
+reviewHeading.style.marginBottom = "40px";
+
+// Creates the paragraph
+
+const reviewParagraph = document.createElement("p");
+review.appendChild(reviewParagraph); 
+reviewParagraph.textContent = "When you want to buy any application from the Apple iTunes store you have more.  When you want to buy any application from the Apple iTunes store you have more.  When you want to buy any application from the Apple iTunes store you have more.  When you want to buy any application from the Apple iTunes store you have more. This is the end of the paragraph.";
+reviewParagraph.style.fontWeight = "200";
+
+// Creates a div for posts
+
+const postsSection = document.createElement("div");
+
+
+</script>
+
+</html>
